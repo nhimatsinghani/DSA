@@ -1,0 +1,251 @@
+# Evolving Key-Value Store - Technical Interview Preparation
+
+## Overview
+
+This is a comprehensive implementation of a 4-stage evolving key-value store problem commonly encountered in technical interviews. Each stage builds upon the previous one, adding new functionality while maintaining backward compatibility.
+
+## Problem Description
+
+You are tasked with implementing an in-memory key-value database that evolves through 4 stages:
+
+1. **Stage 1**: Basic get/set functionality
+2. **Stage 2**: TTL (Time-To-Live) support
+3. **Stage 3**: Point-in-time queries with history
+4. **Stage 4**: Deletion operations
+
+## Files Structure
+
+```
+evolving-key-value-store/
+├── key_value_store.py       # Main implementation
+├── demo.py                  # Interactive demonstration
+├── run_tests.py            # Test runner with multiple options
+├── test_comprehensive.py   # Full test suite
+├── test_stage1.py          # Stage 1 specific tests
+├── test_stage2.py          # Stage 2 specific tests
+├── test_stage3.py          # Stage 3 specific tests
+├── test_stage4.py          # Stage 4 specific tests
+└── README.md               # This file
+```
+
+## Quick Start
+
+### Run the Demo
+
+```bash
+python demo.py
+```
+
+### Run All Tests
+
+```bash
+python run_tests.py
+```
+
+### Run Tests for Specific Stage
+
+```bash
+python run_tests.py --stage 1    # Test only Stage 1
+python run_tests.py --stage 2    # Test only Stage 2
+python run_tests.py --stage 3    # Test only Stage 3
+python run_tests.py --stage 4    # Test only Stage 4
+```
+
+### Quick Smoke Test
+
+```bash
+python run_tests.py --quick
+```
+
+## Stage Details
+
+### Stage 1: Basic Operations
+
+**Methods to implement:**
+
+- `set_basic(key, value)` - Store a key-value pair
+- `get_basic(key)` - Retrieve value for a key
+
+**Key Requirements:**
+
+- Handle different data types (string, int, list, dict, etc.)
+- Return `None` for non-existent keys
+- Support key overwriting
+
+### Stage 2: TTL Operations
+
+**Methods to implement:**
+
+- `set_with_ttl(key, value, ttl=None)` - Store with optional TTL
+- `get_with_ttl(key)` - Retrieve value respecting TTL
+
+**Key Requirements:**
+
+- TTL in seconds (float)
+- Automatic expiration and cleanup
+- `None` TTL means permanent storage
+- Expired keys should return `None`
+
+### Stage 3: Point-in-Time Queries
+
+**Methods to implement:**
+
+- `set_with_history(key, value, ttl=None)` - Store with history tracking
+- `get_at_time(key, timestamp)` - Get value at specific timestamp
+- `get_current_with_history(key)` - Get current value from history
+
+**Key Requirements:**
+
+- Maintain complete history of all changes
+- Timestamp-based queries
+- TTL still applies to historical queries
+- History preserved even after key updates
+
+### Stage 4: Deletion Operations
+
+**Methods to implement:**
+
+- `delete(key)` - Delete a key from the database
+- `exists(key)` - Check if key exists (not deleted/expired)
+
+**Key Requirements:**
+
+- Return `True` if deletion successful, `False` if key doesn't exist
+- Deleted keys should return `None` for current queries
+- Historical queries before deletion should still work
+- Support recreation of deleted keys
+
+## Unified Interface
+
+The implementation provides a unified interface that works across all stages:
+
+```python
+store = EvolvingKeyValueStore()
+
+# Basic operations (Stage 1)
+store.set("key", "value")
+value = store.get("key")
+
+# With TTL (Stage 2)
+store.set("key", "value", ttl=60.0)  # Expires in 60 seconds
+
+# Point-in-time queries (Stage 3)
+import time
+timestamp = time.time()
+store.set("key", "new_value")
+old_value = store.get_at_time("key", timestamp)
+
+# Deletion (Stage 4)
+store.delete("key")
+exists = store.exists("key")  # False
+```
+
+## Utility Methods
+
+Additional helper methods are provided:
+
+- `size()` - Number of valid (non-expired, non-deleted) keys
+- `get_all_keys()` - List of all valid keys
+- `clear()` - Remove all data
+- `cleanup_expired()` - Manually trigger cleanup of expired keys
+
+## Testing Strategy
+
+### Individual Stage Tests
+
+Each stage has its own test file focusing on specific functionality:
+
+- **test_stage1.py**: Basic operations, data types, overwriting
+- **test_stage2.py**: TTL functionality, expiration, edge cases
+- **test_stage3.py**: History tracking, point-in-time queries, TTL with history
+- **test_stage4.py**: Deletion operations, edge cases, recreation
+
+### Comprehensive Tests
+
+**test_comprehensive.py** contains integration tests covering:
+
+- Cross-stage functionality
+- Edge cases and error conditions
+- Performance considerations
+- Complex scenarios
+
+## Common Interview Tips
+
+### Time Management (90 minutes)
+
+- **Stage 1** (15-20 min): Focus on basic functionality
+- **Stage 2** (20-25 min): Implement TTL carefully
+- **Stage 3** (25-30 min): Design history storage efficiently
+- **Stage 4** (15-20 min): Handle deletion edge cases
+- **Testing/Debug** (10-15 min): Verify with provided tests
+
+### Key Challenges
+
+1. **TTL Implementation**: Use `time.time()` for timestamps, handle expiration correctly
+2. **History Storage**: Maintain ordered list of records per key
+3. **Deletion Logic**: Mark as deleted while preserving history
+4. **Edge Cases**: Empty keys, None values, zero/negative TTL
+
+### Performance Considerations
+
+- O(1) for basic get/set operations
+- O(n) for point-in-time queries (n = number of updates to key)
+- Memory usage grows with history size
+- Consider cleanup strategies for expired data
+
+## Common Mistakes to Avoid
+
+1. **TTL Precision**: Use proper time comparison for expiration
+2. **History Order**: Maintain chronological order of records
+3. **Deletion Semantics**: Deleted keys should not exist for current queries
+4. **Edge Cases**: Handle empty strings, None values, edge TTL values
+5. **Integration**: Ensure all stages work together seamlessly
+
+## Example Interview Approach
+
+```python
+# Stage 1: Start simple
+class KeyValueStore:
+    def __init__(self):
+        self.data = {}
+
+    def set_basic(self, key, value):
+        self.data[key] = value
+
+    def get_basic(self, key):
+        return self.data.get(key)
+
+# Then evolve for each stage...
+```
+
+## Debugging During Interview
+
+Use the individual stage test files for focused debugging:
+
+```bash
+# If Stage 2 tests are failing
+python test_stage2.py
+
+# Check specific functionality
+python run_tests.py --stage 2
+```
+
+Add debug prints to understand test failures:
+
+```python
+def get_with_ttl(self, key):
+    print(f"DEBUG: Getting key '{key}'")
+    # ... implementation
+```
+
+## Final Notes
+
+This implementation addresses the common issue mentioned in the original readme where "deletion method in stage 4" caused test failures. The provided solution handles all edge cases for deletion operations.
+
+The code is designed to be:
+
+- **Interview-ready**: Clear, well-structured, and handles edge cases
+- **Debuggable**: Comprehensive test suite with detailed output
+- **Educational**: Comments and documentation for learning
+
+Good luck with your technical interview!
