@@ -3,6 +3,7 @@ from typing import Any, Optional, Dict, List, Tuple
 from dataclasses import dataclass
 from collections import defaultdict
 import bisect
+from sortedcontainers import SortedList
 
 
 @dataclass
@@ -45,7 +46,7 @@ class EvolvingKeyValueStore:
         self.ttl_data: Dict[str, Tuple[Any, float, Optional[float]]] = {}  # key -> (value, timestamp, ttl)
         
         # Stage 3: Historical data for point-in-time queries
-        self.history: Dict[str, List[Record]] = defaultdict(list)
+        self.history: Dict[str, SortedList[Record]] = defaultdict(lambda: SortedList(key=lambda record: record.timestamp))
         
         # Stage 4: Deletion tracking
         self.deleted_keys: set = set()
@@ -98,7 +99,7 @@ class EvolvingKeyValueStore:
         record = Record(value=value, timestamp=current_time, ttl=ttl)
         
         # Add to history (maintaining sorted order by timestamp)
-        self.history[key].append(record)
+        self.history[key].add(record)
         
         # Update current data structures for backward compatibility
         self.ttl_data[key] = (value, current_time, ttl)
@@ -109,21 +110,26 @@ class EvolvingKeyValueStore:
             self.deleted_keys.remove(key)
     
     def get_at_time(self, key: str, timestamp: float) -> Optional[Any]:
-        """Stage 3: Get the value of a key at a specific timestamp."""
+        """Stage 3: Get the value of a key at a specific timestamp using binary search."""
         if key not in self.history:
             return None
         
         records = self.history[key]
         
-        # Find the latest record at or before the given timestamp
-        latest_record = None
-        for record in records:
-            if record.timestamp <= timestamp:
-                if latest_record is None or record.timestamp > latest_record.timestamp:
-                    latest_record = record
-        
-        if latest_record is None:
+        if not records:
             return None
+        
+        # Use binary search to find the latest record at or before the given timestamp
+        # bisect_key_right finds the insertion point by comparing with the key (timestamp)
+        # The record we want is at index - 1 (if it exists)
+        index = records.bisect_key_right(timestamp)
+        
+        if index == 0:
+            # No record at or before the given timestamp
+            return None
+        
+        # Get the latest record at or before the timestamp
+        latest_record : Record = records[index - 1]
         
         # Check if the record is valid at the query time
         if latest_record.is_valid_at_time(timestamp):
@@ -146,12 +152,8 @@ class EvolvingKeyValueStore:
         if key in self.deleted_keys:
             return False
         
-        # Check if key exists in any form
-        exists = (key in self.data or 
-                 key in self.ttl_data or 
-                 key in self.history)
-        
-        if not exists:
+        # Check if key exists and is not expired (use exists method which handles TTL)
+        if not self.exists(key):
             return False
         
         # Mark as deleted
@@ -159,7 +161,7 @@ class EvolvingKeyValueStore:
         
         # Add deletion record to history
         deletion_record = Record(value=None, timestamp=current_time, deleted=True)
-        self.history[key].append(deletion_record)
+        self.history[key].add(deletion_record)
         
         # Remove from current data structures
         if key in self.data:
