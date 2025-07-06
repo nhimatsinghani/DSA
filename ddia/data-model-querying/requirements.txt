@@ -1,0 +1,5 @@
+neo4j==5.14.1
+graphene==3.3
+flask==2.3.3
+flask-graphql==2.0.1
+python-dotenv==1.0.0 
