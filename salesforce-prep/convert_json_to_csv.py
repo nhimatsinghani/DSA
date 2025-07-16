@@ -3,11 +3,11 @@ import csv
 
 def convert_json_to_csv():
     # Read the JSON file
-    with open('top-last-30-days-meta-tagged.json', 'r') as json_file:
+    with open('top-salesforce-more-than-six-months.json', 'r') as json_file:
         data = json.load(json_file)
     
     # Open CSV file for writing
-    with open('top-last-30-days-meta-tagged.csv', 'w', newline='', encoding='utf-8') as csv_file:
+    with open('top-salesforce-more-than-six-months.csv', 'w', newline='', encoding='utf-8') as csv_file:
         # Define headers as specified
         headers = ['Title', 'status', 'difficulty', 'frequency', 'tags', 'link']
         writer = csv.DictWriter(csv_file, fieldnames=headers)
@@ -39,7 +39,7 @@ def convert_json_to_csv():
             # Write row to CSV
             writer.writerow(row)
     
-    print("CSV file 'top-last-30-days-meta-tagged.csv' has been created successfully!")
+    print("CSV file 'top-salesforce-more-than-six-months.csv' has been created successfully!")
     print(f"Total records processed: {len(data)}")
 
 if __name__ == "__main__":

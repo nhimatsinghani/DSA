@@ -1,0 +1,101 @@
+Title,status,difficulty,frequency,tags,link
+Search Suggestions System,TO_DO,MEDIUM,100,Array; String; Binary Search; Trie; Sorting; Heap (Priority Queue),https://leetcode.com/problems/search-suggestions-system/
+Merge Intervals,SOLVED,MEDIUM,81.4,Array; Sorting,https://leetcode.com/problems/merge-intervals/
+Word Break,TO_DO,MEDIUM,79.8,Array; Hash Table; String; Dynamic Programming; Trie; Memoization,https://leetcode.com/problems/word-break/
+Group Anagrams,TO_DO,MEDIUM,76.3,Array; Hash Table; String; Sorting,https://leetcode.com/problems/group-anagrams/
+Minimize Malware Spread,TO_DO,HARD,76.3,Array; Hash Table; Depth-First Search; Breadth-First Search; Union Find; Graph,https://leetcode.com/problems/minimize-malware-spread/
+Distinct Subsequences,TO_DO,HARD,74.3,String; Dynamic Programming,https://leetcode.com/problems/distinct-subsequences/
+Number of Islands,SOLVED,MEDIUM,74.3,Array; Depth-First Search; Breadth-First Search; Union Find; Matrix,https://leetcode.com/problems/number-of-islands/
+Subarray Product Less Than K,SOLVED,MEDIUM,74.3,Array; Binary Search; Sliding Window; Prefix Sum,https://leetcode.com/problems/subarray-product-less-than-k/
+Minimum Number of Taps to Open to Water a Garden,TO_DO,HARD,74.3,Array; Dynamic Programming; Greedy,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+Design a Text Editor,TO_DO,HARD,74.3,Linked List; String; Stack; Design; Simulation; Doubly-Linked List,https://leetcode.com/problems/design-a-text-editor/
+Smallest Substring With Identical Characters I,TO_DO,HARD,72.2,Array; Binary Search; Enumeration,https://leetcode.com/problems/smallest-substring-with-identical-characters-i/
+Smallest Substring With Identical Characters II,TO_DO,HARD,72.2,String; Binary Search,https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/
+Trapping Rain Water,SOLVED,HARD,69.8,Array; Two Pointers; Dynamic Programming; Stack; Monotonic Stack,https://leetcode.com/problems/trapping-rain-water/
+LRU Cache,SOLVED,MEDIUM,69.8,Hash Table; Linked List; Design; Doubly-Linked List,https://leetcode.com/problems/lru-cache/
+LFU Cache,SOLVED,HARD,69.8,Hash Table; Linked List; Design; Doubly-Linked List,https://leetcode.com/problems/lfu-cache/
+Palindromic Substrings,SOLVED,MEDIUM,69.8,Two Pointers; String; Dynamic Programming,https://leetcode.com/problems/palindromic-substrings/
+Longest Substring Without Repeating Characters,SOLVED,MEDIUM,67.1,Hash Table; String; Sliding Window,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Valid Parentheses,SOLVED,EASY,67.1,String; Stack,https://leetcode.com/problems/valid-parentheses/
+Maximum Number of Occurrences of a Substring,TO_DO,MEDIUM,67.1,Hash Table; String; Sliding Window,https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/
+The kth Factor of n,TO_DO,MEDIUM,67.1,Math; Number Theory,https://leetcode.com/problems/the-kth-factor-of-n/
+Integer to Roman,TO_DO,MEDIUM,64.1,Hash Table; Math; String,https://leetcode.com/problems/integer-to-roman/
+Best Time to Buy and Sell Stock,SOLVED,EASY,64.1,Array; Dynamic Programming,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+Largest Number,TO_DO,MEDIUM,64.1,Array; String; Greedy; Sorting,https://leetcode.com/problems/largest-number/
+String Compression,TO_DO,MEDIUM,64.1,Two Pointers; String,https://leetcode.com/problems/string-compression/
+K-diff Pairs in an Array,TO_DO,MEDIUM,64.1,Array; Hash Table; Two Pointers; Binary Search; Sorting,https://leetcode.com/problems/k-diff-pairs-in-an-array/
+Number of Divisible Triplet Sums,TO_DO,MEDIUM,64.1,Array; Hash Table,https://leetcode.com/problems/number-of-divisible-triplet-sums/
+3Sum,TO_DO,MEDIUM,60.6,Array; Two Pointers; Sorting,https://leetcode.com/problems/3sum/
+Meeting Rooms II,SOLVED,MEDIUM,60.6,Array; Two Pointers; Greedy; Sorting; Heap (Priority Queue); Prefix Sum,https://leetcode.com/problems/meeting-rooms-ii/
+Count Palindromic Subsequences,TO_DO,HARD,60.6,String; Dynamic Programming,https://leetcode.com/problems/count-palindromic-subsequences/
+Two Sum,SOLVED,EASY,56.5,Array; Hash Table,https://leetcode.com/problems/two-sum/
+Minimum Window Substring,SOLVED,HARD,56.5,Hash Table; String; Sliding Window,https://leetcode.com/problems/minimum-window-substring/
+Course Schedule II,SOLVED,MEDIUM,56.5,Depth-First Search; Breadth-First Search; Graph; Topological Sort,https://leetcode.com/problems/course-schedule-ii/
+Kth Largest Element in an Array,SOLVED,MEDIUM,56.5,Array; Divide and Conquer; Sorting; Heap (Priority Queue); Quickselect,https://leetcode.com/problems/kth-largest-element-in-an-array/
+Maximal Square,TO_DO,MEDIUM,56.5,Array; Dynamic Programming; Matrix,https://leetcode.com/problems/maximal-square/
+Coin Change,TO_DO,MEDIUM,56.5,Array; Dynamic Programming; Breadth-First Search,https://leetcode.com/problems/coin-change/
+Beautiful Arrangement,TO_DO,MEDIUM,56.5,Array; Dynamic Programming; Backtracking; Bit Manipulation; Bitmask,https://leetcode.com/problems/beautiful-arrangement/
+Task Scheduler,TO_DO,MEDIUM,56.5,Array; Hash Table; Greedy; Sorting; Heap (Priority Queue); Counting,https://leetcode.com/problems/task-scheduler/
+Asteroid Collision,SOLVED,MEDIUM,56.5,Array; Stack; Simulation,https://leetcode.com/problems/asteroid-collision/
+Sum of Nodes with Even-Valued Grandparent,TO_DO,MEDIUM,56.5,Tree; Depth-First Search; Breadth-First Search; Binary Tree,https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
+Maximum Units on a Truck,TO_DO,EASY,56.5,Array; Greedy; Sorting,https://leetcode.com/problems/maximum-units-on-a-truck/
+Divide Array Into Arrays With Max Difference,TO_DO,MEDIUM,56.5,Array; Greedy; Sorting,https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/
+Search in Rotated Sorted Array,SOLVED,MEDIUM,51.4,Array; Binary Search,https://leetcode.com/problems/search-in-rotated-sorted-array/
+Jump Game,SOLVED,MEDIUM,51.4,Array; Dynamic Programming; Greedy,https://leetcode.com/problems/jump-game/
+Decode Ways,TO_DO,MEDIUM,51.4,String; Dynamic Programming,https://leetcode.com/problems/decode-ways/
+Validate Binary Search Tree,TO_DO,MEDIUM,51.4,Tree; Depth-First Search; Binary Search Tree; Binary Tree,https://leetcode.com/problems/validate-binary-search-tree/
+Populating Next Right Pointers in Each Node,TO_DO,MEDIUM,51.4,Linked List; Tree; Depth-First Search; Breadth-First Search; Binary Tree,https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+Binary Tree Maximum Path Sum,SOLVED,HARD,51.4,Dynamic Programming; Tree; Depth-First Search; Binary Tree,https://leetcode.com/problems/binary-tree-maximum-path-sum/
+Min Stack,SOLVED,MEDIUM,51.4,Stack; Design,https://leetcode.com/problems/min-stack/
+Number of Digit One,TO_DO,HARD,51.4,Math; Dynamic Programming; Recursion,https://leetcode.com/problems/number-of-digit-one/
+Move Zeroes,TO_DO,EASY,51.4,Array; Two Pointers,https://leetcode.com/problems/move-zeroes/
+Top K Frequent Elements,SOLVED,MEDIUM,51.4,Array; Hash Table; Divide and Conquer; Sorting; Heap (Priority Queue); Bucket Sort; Counting; Quickselect,https://leetcode.com/problems/top-k-frequent-elements/
+Split Array Largest Sum,TO_DO,HARD,51.4,Array; Binary Search; Dynamic Programming; Greedy; Prefix Sum,https://leetcode.com/problems/split-array-largest-sum/
+Maximum Product of Three Numbers,TO_DO,EASY,51.4,Array; Math; Sorting,https://leetcode.com/problems/maximum-product-of-three-numbers/
+Count Binary Substrings,TO_DO,EASY,51.4,Two Pointers; String,https://leetcode.com/problems/count-binary-substrings/
+Degree of an Array,TO_DO,EASY,51.4,Array; Hash Table,https://leetcode.com/problems/degree-of-an-array/
+Partition Array Into Two Arrays to Minimize Sum Difference,TO_DO,HARD,51.4,Array; Two Pointers; Binary Search; Dynamic Programming; Bit Manipulation; Ordered Set; Bitmask,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/
+Largest Number After Digit Swaps by Parity,TO_DO,EASY,51.4,Sorting; Heap (Priority Queue),https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/
+Maximize Greatness of an Array,TO_DO,MEDIUM,51.4,Array; Two Pointers; Greedy; Sorting,https://leetcode.com/problems/maximize-greatness-of-an-array/
+Remove Adjacent Almost-Equal Characters,TO_DO,MEDIUM,51.4,String; Dynamic Programming; Greedy,https://leetcode.com/problems/remove-adjacent-almost-equal-characters/
+Find Subarray With Bitwise OR Closest to K,TO_DO,HARD,51.4,Array; Binary Search; Bit Manipulation; Segment Tree,https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/
+Longest Palindromic Substring,SOLVED,MEDIUM,45,Two Pointers; String; Dynamic Programming,https://leetcode.com/problems/longest-palindromic-substring/
+Container With Most Water,SOLVED,MEDIUM,45,Array; Two Pointers; Greedy,https://leetcode.com/problems/container-with-most-water/
+Roman to Integer,TO_DO,EASY,45,Hash Table; Math; String,https://leetcode.com/problems/roman-to-integer/
+Reverse Nodes in k-Group,TO_DO,HARD,45,Linked List; Recursion,https://leetcode.com/problems/reverse-nodes-in-k-group/
+Combination Sum,SOLVED,MEDIUM,45,Array; Backtracking,https://leetcode.com/problems/combination-sum/
+Wildcard Matching,TO_DO,HARD,45,String; Dynamic Programming; Greedy; Recursion,https://leetcode.com/problems/wildcard-matching/
+"Pow(x, n)",SOLVED,MEDIUM,45,Math; Recursion,https://leetcode.com/problems/powx-n/
+Word Search,TO_DO,MEDIUM,45,Array; String; Backtracking; Depth-First Search; Matrix,https://leetcode.com/problems/word-search/
+Construct Binary Tree from Preorder and Inorder Traversal,TO_DO,MEDIUM,45,Array; Hash Table; Divide and Conquer; Tree; Binary Tree,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+Word Ladder,SOLVED,HARD,45,Hash Table; String; Breadth-First Search,https://leetcode.com/problems/word-ladder/
+Maximum Product Subarray,SOLVED,MEDIUM,45,Array; Dynamic Programming,https://leetcode.com/problems/maximum-product-subarray/
+Lowest Common Ancestor of a Binary Tree,SOLVED,MEDIUM,45,Tree; Depth-First Search; Binary Tree,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+Verify Preorder Sequence in Binary Search Tree,TO_DO,MEDIUM,45,Array; Stack; Tree; Binary Search Tree; Recursion; Monotonic Stack; Binary Tree,https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/
+Graph Valid Tree,TO_DO,MEDIUM,45,Depth-First Search; Breadth-First Search; Union Find; Graph,https://leetcode.com/problems/graph-valid-tree/
+Find Median from Data Stream,SOLVED,HARD,45,Two Pointers; Design; Sorting; Heap (Priority Queue); Data Stream,https://leetcode.com/problems/find-median-from-data-stream/
+Range Addition,TO_DO,MEDIUM,45,Array; Prefix Sum,https://leetcode.com/problems/range-addition/
+Kth Smallest Element in a Sorted Matrix,SOLVED,MEDIUM,45,Array; Binary Search; Sorting; Heap (Priority Queue); Matrix,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+Design In-Memory File System,SOLVED,HARD,45,Hash Table; String; Design; Trie; Sorting,https://leetcode.com/problems/design-in-memory-file-system/
+Top K Frequent Words,TO_DO,MEDIUM,45,Array; Hash Table; String; Trie; Sorting; Heap (Priority Queue); Bucket Sort; Counting,https://leetcode.com/problems/top-k-frequent-words/
+Max Area of Island,TO_DO,MEDIUM,45,Array; Depth-First Search; Breadth-First Search; Union Find; Matrix,https://leetcode.com/problems/max-area-of-island/
+Daily Temperatures,TO_DO,MEDIUM,45,Array; Stack; Monotonic Stack,https://leetcode.com/problems/daily-temperatures/
+Smallest Subtree with all the Deepest Nodes,SOLVED,MEDIUM,45,Hash Table; Tree; Depth-First Search; Breadth-First Search; Binary Tree,https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
+Maximum Frequency Stack,TO_DO,HARD,45,Hash Table; Stack; Design; Ordered Set,https://leetcode.com/problems/maximum-frequency-stack/
+Rotting Oranges,TO_DO,MEDIUM,45,Array; Breadth-First Search; Matrix,https://leetcode.com/problems/rotting-oranges/
+Height Checker,TO_DO,EASY,45,Array; Sorting; Counting Sort,https://leetcode.com/problems/height-checker/
+Magnetic Force Between Two Balls,TO_DO,MEDIUM,45,Array; Binary Search; Sorting,https://leetcode.com/problems/magnetic-force-between-two-balls/
+Construct the Lexicographically Largest Valid Sequence,TO_DO,MEDIUM,45,Array; Backtracking,https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/
+Median of Two Sorted Arrays,SOLVED,HARD,36,Array; Binary Search; Divide and Conquer,https://leetcode.com/problems/median-of-two-sorted-arrays/
+Zigzag Conversion,TO_DO,MEDIUM,36,String,https://leetcode.com/problems/zigzag-conversion/
+Letter Combinations of a Phone Number,SOLVED,MEDIUM,36,Hash Table; String; Backtracking,https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+Merge k Sorted Lists,SOLVED,HARD,36,Linked List; Divide and Conquer; Heap (Priority Queue); Merge Sort,https://leetcode.com/problems/merge-k-sorted-lists/
+Longest Valid Parentheses,TO_DO,HARD,36,String; Dynamic Programming; Stack,https://leetcode.com/problems/longest-valid-parentheses/
+Find First and Last Position of Element in Sorted Array,TO_DO,MEDIUM,36,Array; Binary Search,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+Rotate Image,TO_DO,MEDIUM,36,Array; Math; Matrix,https://leetcode.com/problems/rotate-image/
+N-Queens,TO_DO,HARD,36,Array; Backtracking,https://leetcode.com/problems/n-queens/
+Maximum Subarray,SOLVED,MEDIUM,36,Array; Divide and Conquer; Dynamic Programming,https://leetcode.com/problems/maximum-subarray/
+Minimum Path Sum,TO_DO,MEDIUM,36,Array; Dynamic Programming; Matrix,https://leetcode.com/problems/minimum-path-sum/
+Sort Colors,SOLVED,MEDIUM,36,Array; Two Pointers; Sorting,https://leetcode.com/problems/sort-colors/
+Flatten Binary Tree to Linked List,TO_DO,MEDIUM,36,Linked List; Stack; Tree; Depth-First Search; Binary Tree,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+Triangle,TO_DO,MEDIUM,36,Array; Dynamic Programming,https://leetcode.com/problems/triangle/
