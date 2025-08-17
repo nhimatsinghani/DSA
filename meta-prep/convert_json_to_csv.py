@@ -3,11 +3,11 @@ import csv
 
 def convert_json_to_csv():
     # Read the JSON file
-    with open('top-last-30-days-meta-tagged.json', 'r') as json_file:
+    with open('airbnb-alltime-lc.json', 'r') as json_file:
         data = json.load(json_file)
     
     # Open CSV file for writing
-    with open('top-last-30-days-meta-tagged.csv', 'w', newline='', encoding='utf-8') as csv_file:
+    with open('airbnb-alltime-lc.csv', 'w', newline='', encoding='utf-8') as csv_file:
         # Define headers as specified
         headers = ['Title', 'status', 'difficulty', 'frequency', 'tags', 'link']
         writer = csv.DictWriter(csv_file, fieldnames=headers)
@@ -15,8 +15,20 @@ def convert_json_to_csv():
         # Write header row
         writer.writeheader()
         
+        # Keep track of seen IDs to ensure uniqueness
+        seen_ids = set()
+        unique_count = 0
+        
         # Process each item in the JSON array
         for item in data:
+            # Check if this item has an ID and if we've seen it before
+            if 'id' in item:
+                item_id = item['id']
+                if item_id in seen_ids:
+                    # Skip this duplicate entry
+                    continue
+                # Mark this ID as seen
+                seen_ids.add(item_id)
             # Extract tags from topicTags array
             tags = []
             if 'topicTags' in item and item['topicTags']:
@@ -38,9 +50,12 @@ def convert_json_to_csv():
             
             # Write row to CSV
             writer.writerow(row)
+            unique_count += 1
     
-    print("CSV file 'top-last-30-days-meta-tagged.csv' has been created successfully!")
-    print(f"Total records processed: {len(data)}")
+    print("CSV file 'airbnb-alltime-lc.csv' has been created successfully!")
+    print(f"Total records in JSON: {len(data)}")
+    print(f"Unique records processed: {unique_count}")
+    print(f"Duplicate records skipped: {len(data) - unique_count}")
 
 if __name__ == "__main__":
     convert_json_to_csv() 

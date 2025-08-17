@@ -1,0 +1,7 @@
+Title,status,difficulty,frequency,tags,link
+Maximum Profit in Job Scheduling,TO_DO,HARD,82.8,Array; Binary Search; Dynamic Programming; Sorting,https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+Simple Bank System,TO_DO,MEDIUM,82.8,Array; Hash Table; Design; Simulation,https://leetcode.com/problems/simple-bank-system/
+Combination Sum,SOLVED,MEDIUM,92.8,Array; Backtracking,https://leetcode.com/problems/combination-sum/
+Text Justification,TO_DO,HARD,92.8,Array; String; Simulation,https://leetcode.com/problems/text-justification/
+Flatten 2D Vector,TO_DO,MEDIUM,92.8,Array; Two Pointers; Design; Iterator,https://leetcode.com/problems/flatten-2d-vector/
+Design Excel Sum Formula,TO_DO,HARD,100,Array; Hash Table; String; Graph; Design; Topological Sort; Matrix,https://leetcode.com/problems/design-excel-sum-formula/

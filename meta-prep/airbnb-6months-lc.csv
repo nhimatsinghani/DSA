@@ -1,0 +1,12 @@
+Title,status,difficulty,frequency,tags,link
+Design Tic-Tac-Toe,SOLVED,MEDIUM,52.6,Array; Hash Table; Design; Matrix; Simulation,https://leetcode.com/problems/design-tic-tac-toe/
+Can Place Flowers,SOLVED,EASY,52.6,Array; Greedy,https://leetcode.com/problems/can-place-flowers/
+Smallest Common Region,TO_DO,MEDIUM,52.6,Array; Hash Table; String; Tree; Depth-First Search; Breadth-First Search,https://leetcode.com/problems/smallest-common-region/
+Maximum Candies You Can Get from Boxes,TO_DO,HARD,52.6,Array; Breadth-First Search; Graph,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/
+Shortest Uncommon Substring in an Array,TO_DO,MEDIUM,60.5,Array; Hash Table; String; Trie,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/
+Combination Sum,SOLVED,MEDIUM,66,Array; Backtracking,https://leetcode.com/problems/combination-sum/
+Flatten 2D Vector,TO_DO,MEDIUM,73.9,Array; Two Pointers; Design; Iterator,https://leetcode.com/problems/flatten-2d-vector/
+Design Excel Sum Formula,TO_DO,HARD,73.9,Array; Hash Table; String; Graph; Design; Topological Sort; Matrix,https://leetcode.com/problems/design-excel-sum-formula/
+Simple Bank System,TO_DO,MEDIUM,79.5,Array; Hash Table; Design; Simulation,https://leetcode.com/problems/simple-bank-system/
+Maximum Profit in Job Scheduling,TO_DO,HARD,88.9,Array; Binary Search; Dynamic Programming; Sorting,https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+Text Justification,TO_DO,HARD,100,Array; String; Simulation,https://leetcode.com/problems/text-justification/

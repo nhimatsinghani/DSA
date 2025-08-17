@@ -1,0 +1,61 @@
+Title,status,difficulty,frequency,tags,link
+Longest Substring Without Repeating Characters,SOLVED,MEDIUM,35.8,Hash Table; String; Sliding Window,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Merge Intervals,SOLVED,MEDIUM,35.8,Array; Sorting,https://leetcode.com/problems/merge-intervals/
+Fraction to Recurring Decimal,TO_DO,MEDIUM,35.8,Hash Table; Math; String,https://leetcode.com/problems/fraction-to-recurring-decimal/
+Coin Change,TO_DO,MEDIUM,35.8,Array; Dynamic Programming; Breadth-First Search,https://leetcode.com/problems/coin-change/
+Flatten Nested List Iterator,TO_DO,MEDIUM,35.8,Stack; Tree; Depth-First Search; Design; Queue; Iterator,https://leetcode.com/problems/flatten-nested-list-iterator/
+Nth Digit,TO_DO,MEDIUM,35.8,Math; Binary Search,https://leetcode.com/problems/nth-digit/
+Can Place Flowers,SOLVED,EASY,35.8,Array; Greedy,https://leetcode.com/problems/can-place-flowers/
+Making A Large Island,SOLVED,HARD,35.8,Array; Depth-First Search; Breadth-First Search; Union Find; Matrix,https://leetcode.com/problems/making-a-large-island/
+Shortest Path in Binary Matrix,SOLVED,MEDIUM,35.8,Array; Breadth-First Search; Matrix,https://leetcode.com/problems/shortest-path-in-binary-matrix/
+All O`one Data Structure,TO_DO,HARD,44.2,Hash Table; Linked List; Design; Doubly-Linked List,https://leetcode.com/problems/all-oone-data-structure/
+Time Based Key-Value Store,TO_DO,MEDIUM,44.2,Hash Table; String; Binary Search; Design,https://leetcode.com/problems/time-based-key-value-store/
+Subarray Product Less Than K,SOLVED,MEDIUM,54.9,Array; Binary Search; Sliding Window; Prefix Sum,https://leetcode.com/problems/subarray-product-less-than-k/
+Shortest Uncommon Substring in an Array,TO_DO,MEDIUM,54.9,Array; Hash Table; String; Trie,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/
+Design Tic-Tac-Toe,SOLVED,MEDIUM,58.8,Array; Hash Table; Design; Matrix; Simulation,https://leetcode.com/problems/design-tic-tac-toe/
+Design Excel Sum Formula,TO_DO,HARD,58.8,Array; Hash Table; String; Graph; Design; Topological Sort; Matrix,https://leetcode.com/problems/design-excel-sum-formula/
+Regular Expression Matching,TO_DO,HARD,69.6,String; Dynamic Programming; Recursion,https://leetcode.com/problems/regular-expression-matching/
+Valid Parentheses,SOLVED,EASY,69.6,String; Stack,https://leetcode.com/problems/valid-parentheses/
+Merge k Sorted Lists,SOLVED,HARD,69.6,Linked List; Divide and Conquer; Heap (Priority Queue); Merge Sort,https://leetcode.com/problems/merge-k-sorted-lists/
+Convert Sorted Array to Binary Search Tree,TO_DO,EASY,69.6,Array; Divide and Conquer; Tree; Binary Search Tree; Binary Tree,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+Single Number,SOLVED,EASY,69.6,Array; Bit Manipulation,https://leetcode.com/problems/single-number/
+Reverse Bits,SOLVED,EASY,69.6,Divide and Conquer; Bit Manipulation,https://leetcode.com/problems/reverse-bits/
+House Robber,SOLVED,MEDIUM,69.6,Array; Dynamic Programming,https://leetcode.com/problems/house-robber/
+Happy Number,SOLVED,EASY,69.6,Hash Table; Math; Two Pointers,https://leetcode.com/problems/happy-number/
+Contains Duplicate,SOLVED,EASY,69.6,Array; Hash Table; Sorting,https://leetcode.com/problems/contains-duplicate/
+Contains Duplicate III,TO_DO,HARD,69.6,Array; Sliding Window; Sorting; Bucket Sort; Ordered Set,https://leetcode.com/problems/contains-duplicate-iii/
+Maximal Square,TO_DO,MEDIUM,69.6,Array; Dynamic Programming; Matrix,https://leetcode.com/problems/maximal-square/
+Mini Parser,TO_DO,MEDIUM,69.6,String; Stack; Depth-First Search,https://leetcode.com/problems/mini-parser/
+Add Strings,SOLVED,EASY,69.6,Math; String; Simulation,https://leetcode.com/problems/add-strings/
+IP to CIDR,TO_DO,MEDIUM,69.6,String; Bit Manipulation,https://leetcode.com/problems/ip-to-cidr/
+Pyramid Transition Matrix,TO_DO,MEDIUM,69.6,Bit Manipulation; Depth-First Search; Breadth-First Search,https://leetcode.com/problems/pyramid-transition-matrix/
+Shortest Path to Get All Keys,TO_DO,HARD,69.6,Array; Bit Manipulation; Breadth-First Search; Matrix,https://leetcode.com/problems/shortest-path-to-get-all-keys/
+Convert to Base -2,TO_DO,MEDIUM,69.6,Math,https://leetcode.com/problems/convert-to-base-2/
+Robot Bounded In Circle,TO_DO,MEDIUM,69.6,Math; String; Simulation,https://leetcode.com/problems/robot-bounded-in-circle/
+Minimize Rounding Error to Meet Target,TO_DO,MEDIUM,69.6,Array; Math; String; Greedy; Sorting,https://leetcode.com/problems/minimize-rounding-error-to-meet-target/
+Design File System,TO_DO,MEDIUM,69.6,Hash Table; String; Design; Trie,https://leetcode.com/problems/design-file-system/
+Minimum Number of Flips to Convert Binary Matrix to Zero Matrix,TO_DO,HARD,69.6,Array; Hash Table; Bit Manipulation; Breadth-First Search; Matrix,https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/
+Strings Differ by One Character,TO_DO,MEDIUM,69.6,Hash Table; String; Rolling Hash; Hash Function,https://leetcode.com/problems/strings-differ-by-one-character/
+Minimum Number of Vertices to Reach All Nodes,TO_DO,MEDIUM,69.6,Graph,https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
+Number of Ways to Build House of Cards,TO_DO,MEDIUM,69.6,Math; Dynamic Programming,https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/
+Two Sum,SOLVED,EASY,71.6,Array; Hash Table,https://leetcode.com/problems/two-sum/
+Add Two Numbers,SOLVED,MEDIUM,71.6,Linked List; Math; Recursion,https://leetcode.com/problems/add-two-numbers/
+Word Search II,TO_DO,HARD,71.6,Array; String; Backtracking; Trie; Matrix,https://leetcode.com/problems/word-search-ii/
+Basic Calculator II,SOLVED,MEDIUM,71.6,Math; String; Stack,https://leetcode.com/problems/basic-calculator-ii/
+Minimum Window Substring,SOLVED,HARD,73.5,Hash Table; String; Sliding Window,https://leetcode.com/problems/minimum-window-substring/
+Intersection of Two Linked Lists,TO_DO,EASY,73.5,Hash Table; Linked List; Two Pointers,https://leetcode.com/problems/intersection-of-two-linked-lists/
+Contains Duplicate II,SOLVED,EASY,73.5,Array; Hash Table; Sliding Window,https://leetcode.com/problems/contains-duplicate-ii/
+Employee Free Time,TO_DO,HARD,73.5,Array; Line Sweep; Sorting; Heap (Priority Queue),https://leetcode.com/problems/employee-free-time/
+Simple Bank System,TO_DO,MEDIUM,73.5,Array; Hash Table; Design; Simulation,https://leetcode.com/problems/simple-bank-system/
+Maximum Candies You Can Get from Boxes,TO_DO,HARD,75.1,Array; Breadth-First Search; Graph,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/
+Trapping Rain Water,SOLVED,HARD,78.2,Array; Two Pointers; Dynamic Programming; Stack; Monotonic Stack,https://leetcode.com/problems/trapping-rain-water/
+Alien Dictionary,TO_DO,HARD,79.5,Array; String; Depth-First Search; Breadth-First Search; Graph; Topological Sort,https://leetcode.com/problems/alien-dictionary/
+Sliding Puzzle,TO_DO,HARD,79.5,Array; Dynamic Programming; Backtracking; Breadth-First Search; Memoization; Matrix,https://leetcode.com/problems/sliding-puzzle/
+Cheapest Flights Within K Stops,TO_DO,MEDIUM,79.5,Dynamic Programming; Depth-First Search; Breadth-First Search; Graph; Heap (Priority Queue); Shortest Path,https://leetcode.com/problems/cheapest-flights-within-k-stops/
+Pour Water,TO_DO,MEDIUM,80.8,Array; Simulation,https://leetcode.com/problems/pour-water/
+Smallest Common Region,TO_DO,MEDIUM,83.2,Array; Hash Table; String; Tree; Depth-First Search; Breadth-First Search,https://leetcode.com/problems/smallest-common-region/
+Combination Sum,SOLVED,MEDIUM,88.1,Array; Backtracking,https://leetcode.com/problems/combination-sum/
+Flatten 2D Vector,TO_DO,MEDIUM,90.6,Array; Two Pointers; Design; Iterator,https://leetcode.com/problems/flatten-2d-vector/
+Palindrome Pairs,TO_DO,HARD,92.9,Array; Hash Table; String; Trie,https://leetcode.com/problems/palindrome-pairs/
+Maximum Profit in Job Scheduling,TO_DO,HARD,92.9,Array; Binary Search; Dynamic Programming; Sorting,https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+Text Justification,TO_DO,HARD,100,Array; String; Simulation,https://leetcode.com/problems/text-justification/
